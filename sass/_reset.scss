@@ -19,88 +19,26 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline;
 }
-
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
-
 body {
   line-height: 1;
 }
-
 ol, ul {
   list-style: none;
 }
-
 blockquote, q {
   quotes: none;
 }
-
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none;
 }
-
 table {
   border-collapse: collapse;
   border-spacing: 0;
-}
-
-/*css reset*/
-.clearfix:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0;
-}
-
-html {
-  height: 100%;
-}
-
-body {
-  height: 100%;
-  font-size: 100%;
-}
-
-.wrapper {
-  overflow: hidden;
-  height: 100%;
-}
-
-.page-signin {
-  background: url(../img/background_one.png) 0 0 no-repeat;
-  background-size: 100%;
-  min-height: 100%;
-}
-.page-inner {
-  max-width: 750px;
-  margin: 0 auto;
-}
-
-.logo {
-  width: 320px;
-  margin: 0 auto;
-}
-
-.input {
-  margin: 0 auto;
-  text-align: center;
-  z-index: -1;
-}
-
-.username-input {
-  margin-top: 50%;
-  height: 30px;
-  width: 300px;
-  padding: 5px 5px;
-  border: none;
-  background: transparent;
-  font-size: 1.75rem;
-  color: gray;
-}
+}/*css reset*/

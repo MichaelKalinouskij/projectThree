@@ -1,0 +1,176 @@
+//flex
+
+@mixin flexbox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@mixin justify-content($value) {
+  -webkit-justify-content: $value;
+  -moz-justify-content:$value;
+  -ms-justify-content:$value;
+  justify-content:$value;
+}
+
+@mixin align-items($value) {
+  -webkit-align-items:$value;
+  align-items:$value;
+}
+
+@mixin flex-direction($direction) {// row | row-reverse | column | column-reverse
+  -webkit-flex-direction: $direction;
+  -moz-flex-direction:$direction;
+  -ms-flex-direction:$direction;
+  flex-direction:$direction;
+}
+
+//rem
+
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return #{$remSize}rem;
+}
+
+@mixin font-size($size) {
+  font-size: calculateRem($size);
+}
+
+@mixin width($size) {
+  width: $size;
+  width:calculateRem($size);
+}
+
+@mixin padding($size) {
+  padding: $size;
+  padding: calculateRem($size);
+}
+
+
+
+@mixin rem($property, $values) {
+  // Create a couple of empty lists as output buffers.
+  $font-size: $base-font-size;
+  $px-values: ();
+  $rem-values: ();
+
+  // Loop through the $values list
+  @each $value in $values {
+    // For each property value, if it's in rem or px, derive both rem and
+    // px values for it and add those to the end of the appropriate buffer.
+    // Ensure all pixel values are rounded to the nearest pixel.
+    @if $value == 0 or $value == 0px {
+      // 0 -- use it without a unit
+      $px-values: join($px-values, 0);
+      $rem-values: join($rem-values, 0);
+    } @else if type-of($value) == number and not unitless($value) and (unit($value) == px) {
+      // px value given - calculate rem value from font-size
+      $new-rem-value: $value / $font-size;
+      $px-values: join($px-values, round($value));
+      $rem-values: join($rem-values, #{$new-rem-value}rem);
+    } @else if type-of($value) == number and not unitless($value) and (unit($value) == "%") {
+      // % value given - don't add px or rem
+      $px-values: join($px-values, #{$value});
+      $rem-values: join($rem-values, #{$value});
+    } @else if $value == auto {
+      // auto - don't add px or rem
+      $px-values: join($px-values, auto);
+      $rem-values: join($rem-values, auto);
+    } @else {
+      // unitless value - use those directly as rem and calculate the px-fallback
+      $px-values: join($px-values, round($value * $font-size));
+      $rem-values: join($rem-values, #{$value}rem);
+    }
+  }
+
+  // output the converted rules
+  #{$property}: $px-values;
+  #{$property}: $rem-values;
+}
+
+//shadow
+
+@mixin shadow($property) {
+  -webkit-box-shadow: $property;
+  -moz-box-shadow:    $property;
+  box-shadow:         $property;
+}
+
+//transition
+
+@mixin transition($value) {
+  -webkit-transition: $value;
+  -moz-transition: $value;
+  -ms-transition: $value;
+  -o-transition: $value;
+}
+//triangle
+@mixin triangle($width, $height, $color) {
+  &:before {
+    content:'';
+    width: 0;
+    height: 0;
+    display: block;
+    border-left: $width solid transparent;
+    border-right: $width solid transparent;
+    border-top: $height solid $color;
+    margin-left: -$width;
+    margin-top: -$height;
+  }
+}
+
+//transform
+
+@mixin transform($value) {
+  -webkit-transform: $value;
+  -moz-transform: $value;
+  -ms-transform: $value;
+  -o-transform: $value;
+}
+
+
+//clearfix
+
+@mixin clearfix() {
+  &:after {
+    content:'';
+    clear:both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+  }
+}
+
+//inline-block
+@mixin inline-block($align) {
+  display: inline-block;
+  vertical-align: $align;
+}
+
+@mixin transition($value) {
+  transition: $value;
+  -webkit-transition: $value;
+  -moz-transition: $value;
+}
+
+
+//ration banner
+
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+  > .banner-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
