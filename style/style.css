@@ -51,24 +51,32 @@ table {
 	clear: both;
 	height: 0;
 }
-body {
-	min-width: 7000px;
-	background-color: #eaedf1;
+
+body{
+	min-width: 750px;
+	
+}
+.wrapper {
+	background-image: url(../img/background_one.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	
 }
 .inner {
-	width: 5990px;
+	width: 73%;
+	height: 1334px;
 	margin: 0 auto;
-	padding-left: 505px;
-	padding-right: 505px;
-}
-.header {
-	height: 924px;
-	background-image: url(../img/header_background.png);
+	padding-left: 10px;
+	padding-right: 10px;
+	
 }
 .logo {
-	width: 2227px;
+	width: 318px;
 	margin: 0 auto;
 }
+
+
 
 
 
