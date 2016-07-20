@@ -58,7 +58,7 @@ body{
 }
 .wrapper {
 	background-image: url(../img/background_one.png);
-	background-size: contain;
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 	
