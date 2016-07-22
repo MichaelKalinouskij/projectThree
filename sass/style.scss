@@ -4,6 +4,7 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+@import "mixins";
 
 html {
   height: 100%;
@@ -38,5 +39,40 @@ body {
 }
 
 .input {
+  margin-top: (848px/1334px)*100%;
   text-align: center;
+}
+
+.input {
+  &-title {
+    @include font-size(28px);
+    color: gray;
+  }
+  &-password {
+    display: block;
+    margin-top: (94px/1334px)*100%;
+  }
+}
+
+.field-input {
+    margin-top: (29px/1334px)*100%;
+    height: (30px/1334px)*100%;
+    width: (425px/750px)*100%;
+    padding: (5px/1334px)*100% (5px/1334px)*100%;
+    border: none;
+    background: transparent;
+    @include font-size(28px);
+    color: #fff;
+}
+
+.button {
+  margin-top: (90px/1244px)*100%;
+  width: 650px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  border: 0px;
+  border-radius: 40px;
+  background-color: red;
+  @include font-size(28px);
+  color: #fff;
 }

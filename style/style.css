@@ -67,43 +67,80 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 8, ../sass/style.scss */
+/* line 9, ../sass/style.scss */
 html {
   height: 100%;
 }
 
-/* line 12, ../sass/style.scss */
+/* line 13, ../sass/style.scss */
 body {
   height: 100%;
   font-size: 100%;
 }
 
-/* line 17, ../sass/style.scss */
+/* line 18, ../sass/style.scss */
 .wrapper {
   overflow: hidden;
   height: 100%;
 }
 
-/* line 23, ../sass/style.scss */
+/* line 24, ../sass/style.scss */
 .page-signin {
   background: url(../img/background_one.png) 0 0 no-repeat;
   background-size: 100%;
   min-height: 100%;
 }
-/* line 28, ../sass/style.scss */
+/* line 29, ../sass/style.scss */
 .page-inner {
   max-width: 750px;
   margin: 0 auto;
 }
 
-/* line 34, ../sass/style.scss */
+/* line 35, ../sass/style.scss */
 .logo {
   width: 320px;
   margin: 0 auto;
   padding-top: 10.1949%;
 }
 
-/* line 40, ../sass/style.scss */
+/* line 41, ../sass/style.scss */
 .input {
+  margin-top: 63.56822%;
   text-align: center;
+}
+
+/* line 47, ../sass/style.scss */
+.input-title {
+  font-size: 1.75rem;
+  color: gray;
+}
+/* line 51, ../sass/style.scss */
+.input-password {
+  display: block;
+  margin-top: 7.04648%;
+}
+
+/* line 57, ../sass/style.scss */
+.field-input {
+  margin-top: 2.17391%;
+  height: 2.24888%;
+  width: 56.66667%;
+  padding: 0.37481% 0.37481%;
+  border: none;
+  background: transparent;
+  font-size: 1.75rem;
+  color: #fff;
+}
+
+/* line 68, ../sass/style.scss */
+.button {
+  margin-top: 7.23473%;
+  width: 650px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  border: 0px;
+  border-radius: 40px;
+  background-color: red;
+  font-size: 1.75rem;
+  color: #fff;
 }
