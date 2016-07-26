@@ -8,38 +8,54 @@
 
 html {
   height: 100%;
+
+
 }
 
 body {
   height: 100%;
   font-size: 100%;
+
+
 }
 
 .wrapper {
-  overflow: hidden;
+  min-height: 1334px;
   height: 100%;
+  min-width: 360px;
+  overflow: hidden;
 }
 
 .page {
+  height: 100%;
+
  &-signin {
-  background: url(../img/background_one.png) 0 0 no-repeat;
-  background-size:100%;
-  min-height:100%;
+  margin: 0;
+  padding: 0;
+  background: url(../img/background_one.png) no-repeat center center ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-width: 100%;
+  height: auto;
   }
 &-inner {
+  width: 100%;
   max-width: 750px;
   margin: 0 auto;
   }
 }
 
 .logo {
-  width: 320px;
+  min-width: 320px;
+  width: 42.6%;
   margin: 0 auto;
-  padding-top: (136px/1334px)*100%;
+  padding-top: 17%;
 }
 
 .input {
-  margin-top: (848px/1334px)*100%;
+  margin-top: 37%;
   text-align: center;
 }
 
@@ -50,12 +66,12 @@ body {
   }
   &-password {
     display: block;
-    margin-top: (94px/1334px)*100%;
+    margin-top: 12%;
   }
 }
 
 .field-input {
-    margin-top: (29px/1334px)*100%;
+    margin-top: 4.13%;
     height: (30px/1334px)*100%;
     width: (425px/750px)*100%;
     padding: (5px/1334px)*100% (5px/1334px)*100%;
@@ -66,13 +82,25 @@ body {
 }
 
 .button {
-  margin-top: (90px/1244px)*100%;
-  width: 650px;
-  padding-top: 28px;
-  padding-bottom: 28px;
-  border: 0px;
-  border-radius: 40px;
-  background-color: red;
-  @include font-size(28px);
-  color: #fff;
+    margin-top: 13.6%;
+    width: 86.6%;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    border: 0px;
+    border-radius: 40px;
+    background-color: red;
+    @include font-size(28px);
+    color: #fff;
+}
+.input-text {
+    margin-top: 7.9%;
+    padding-bottom: 7.3%;
+    @include font-size(28px);
+    color: #a2a1b8;
+
+  &-link {
+    @include font-size(28px);
+    text-decoration: none;
+    color: #fff;
+  }
 }
