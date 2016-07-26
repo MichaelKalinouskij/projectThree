@@ -8,8 +8,6 @@
 
 html {
   height: 100%;
-
-
 }
 
 body {
@@ -20,14 +18,14 @@ body {
 }
 
 .wrapper {
-  min-height: 1334px;
   height: 100%;
   min-width: 360px;
-  overflow: hidden;
 }
 
 .page {
+  min-height: 1334px;
   height: 100%;
+  overflow: hidden;
 
  &-signin {
   margin: 0;
@@ -38,7 +36,7 @@ body {
   -o-background-size: cover;
   background-size: cover;
   min-width: 100%;
-  height: auto;
+  height: 100%;
   }
 &-inner {
   width: 100%;

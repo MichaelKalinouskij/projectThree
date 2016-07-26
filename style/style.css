@@ -72,25 +72,25 @@ html {
   height: 100%;
 }
 
-/* line 15, ../sass/style.scss */
+/* line 13, ../sass/style.scss */
 body {
   height: 100%;
   font-size: 100%;
 }
 
-/* line 22, ../sass/style.scss */
+/* line 20, ../sass/style.scss */
 .wrapper {
-  min-height: 1334px;
   height: 100%;
   min-width: 360px;
-  overflow: hidden;
 }
 
-/* line 29, ../sass/style.scss */
+/* line 25, ../sass/style.scss */
 .page {
+  min-height: 1334px;
   height: 100%;
+  overflow: hidden;
 }
-/* line 32, ../sass/style.scss */
+/* line 30, ../sass/style.scss */
 .page-signin {
   margin: 0;
   padding: 0;
@@ -100,16 +100,16 @@ body {
   -o-background-size: cover;
   background-size: cover;
   min-width: 100%;
-  height: auto;
+  height: 100%;
 }
-/* line 43, ../sass/style.scss */
+/* line 41, ../sass/style.scss */
 .page-inner {
   width: 100%;
   max-width: 750px;
   margin: 0 auto;
 }
 
-/* line 50, ../sass/style.scss */
+/* line 48, ../sass/style.scss */
 .logo {
   min-width: 320px;
   width: 42.6%;
@@ -117,24 +117,24 @@ body {
   padding-top: 17%;
 }
 
-/* line 57, ../sass/style.scss */
+/* line 55, ../sass/style.scss */
 .input {
   margin-top: 37%;
   text-align: center;
 }
 
-/* line 63, ../sass/style.scss */
+/* line 61, ../sass/style.scss */
 .input-title {
   font-size: 1.75rem;
   color: gray;
 }
-/* line 67, ../sass/style.scss */
+/* line 65, ../sass/style.scss */
 .input-password {
   display: block;
   margin-top: 12%;
 }
 
-/* line 73, ../sass/style.scss */
+/* line 71, ../sass/style.scss */
 .field-input {
   margin-top: 4.13%;
   height: 2.24888%;
@@ -146,7 +146,7 @@ body {
   color: #fff;
 }
 
-/* line 84, ../sass/style.scss */
+/* line 82, ../sass/style.scss */
 .button {
   margin-top: 13.6%;
   width: 86.6%;
@@ -159,14 +159,14 @@ body {
   color: #fff;
 }
 
-/* line 95, ../sass/style.scss */
+/* line 93, ../sass/style.scss */
 .input-text {
   margin-top: 7.9%;
   padding-bottom: 7.3%;
   font-size: 1.75rem;
   color: #a2a1b8;
 }
-/* line 101, ../sass/style.scss */
+/* line 99, ../sass/style.scss */
 .input-text-link {
   font-size: 1.75rem;
   text-decoration: none;
