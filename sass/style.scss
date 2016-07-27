@@ -3,7 +3,7 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
-@import "compass/reset";
+@import "_reset";
 @import "mixins";
 
 html {
@@ -13,8 +13,6 @@ html {
 body {
   height: 100%;
   font-size: 100%;
-
-
 }
 
 .wrapper {
@@ -23,22 +21,32 @@ body {
 }
 
 .page {
-  min-height: 1334px;
   height: 100%;
-  overflow: hidden;
+  /*overflow: hidden;*/
 
  &-signin {
   margin: 0;
   padding: 0;
+  min-width: 100%;
+  min-height: 100%;
   background: url(../img/background_one.png) no-repeat center center ;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  min-width: 100%;
-  height: 100%;
   }
-&-inner {
+  &-signup {
+  margin: 0;
+  padding: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background: url(../img/background_one.png) no-repeat center center ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }
+  &-inner {
   width: 100%;
   max-width: 750px;
   margin: 0 auto;
@@ -49,56 +57,60 @@ body {
   min-width: 320px;
   width: 42.6%;
   margin: 0 auto;
-  padding-top: 17%;
+
 }
 
 .input {
-  margin-top: 37%;
   text-align: center;
-}
-
-.input {
   &-title {
     @include font-size(28px);
-    color: gray;
+    color: #a2a1b8;
   }
-  &-password {
+  &-signin-password {
     display: block;
-    margin-top: 12%;
+  }
+  &-title-signup {
+    display: block;
   }
 }
 
 .field-input {
-    margin-top: 4.13%;
-    height: (30px/1334px)*100%;
-    width: (425px/750px)*100%;
-    padding: (5px/1334px)*100% (5px/1334px)*100%;
-    border: none;
-    background: transparent;
-    @include font-size(28px);
-    color: #fff;
+  height: (30px/1334px)*100%;
+  width: (425px/750px)*100%;
+  padding: (5px/1334px)*100% (5px/1334px)*100%;
+  border: none;
+  background: transparent;
+  @include font-size(28px);
+  color: #fff;
 }
 
 .button {
-    margin-top: 13.6%;
-    width: 86.6%;
-    padding-top: 28px;
-    padding-bottom: 28px;
-    border: 0px;
-    border-radius: 40px;
-    background-color: red;
-    @include font-size(28px);
-    color: #fff;
+  width: 100%;
+  padding-top: 3.7%;
+  padding-bottom: 3.7%;
+  border: 0px;
+  border-radius: 40px;
+  background-color: red;
+  @include font-size(28px);
+  color: #fff;
 }
 .input-text {
-    margin-top: 7.9%;
-    padding-bottom: 7.3%;
-    @include font-size(28px);
-    color: #a2a1b8;
+  @include font-size(28px);
+  color: #a2a1b8;
 
   &-link {
-    @include font-size(28px);
-    text-decoration: none;
-    color: #fff;
+  @include font-size(28px);
+  text-decoration: none;
+  color: #fff;
   }
+}
+.title-signup {
+  padding-top: 20.5%;
+  text-align: center;
+  @include font-size(44px);
+  color: #fff;
+}
+.input-signup {
+  margin-top: 20%;
+  text-align: center;
 }
