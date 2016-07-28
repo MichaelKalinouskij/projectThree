@@ -22,7 +22,7 @@ body {
 
 .page {
   height: 100%;
-  /*overflow: hidden;*/
+  overflow: hidden;
 
  &-signin {
   margin: 0;
@@ -40,7 +40,7 @@ body {
   padding: 0;
   min-width: 100%;
   min-height: 100%;
-  background: url(../img/background_one.png) no-repeat center center ;
+  background: url(../img/background_two.png) no-repeat center center ;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -86,13 +86,17 @@ body {
 
 .button {
   width: 100%;
-  padding-top: 3.7%;
-  padding-bottom: 3.7%;
+  padding-top: 1%;
+  padding-bottom: 1%;
   border: 0px;
   border-radius: 40px;
   background-color: red;
   @include font-size(28px);
   color: #fff;
+
+  &-next {
+    margin-top: 1%;
+  }
 }
 .input-text {
   @include font-size(28px);
@@ -105,12 +109,11 @@ body {
   }
 }
 .title-signup {
-  padding-top: 20.5%;
   text-align: center;
   @include font-size(44px);
   color: #fff;
 }
 .input-signup {
-  margin-top: 20%;
+  padding-top: 10%;
   text-align: center;
 }

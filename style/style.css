@@ -81,7 +81,7 @@ body {
 /* line 23, ../sass/style.scss */
 .page {
   height: 100%;
-  /*overflow: hidden;*/
+  overflow: hidden;
 }
 /* line 27, ../sass/style.scss */
 .page-signin {
@@ -101,7 +101,7 @@ body {
   padding: 0;
   min-width: 100%;
   min-height: 100%;
-  background: url(../img/background_one.png) no-repeat center center;
+  background: url(../img/background_two.png) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -153,37 +153,40 @@ body {
 /* line 87, ../sass/style.scss */
 .button {
   width: 100%;
-  padding-top: 3.7%;
-  padding-bottom: 3.7%;
+  padding-top: 1%;
+  padding-bottom: 1%;
   border: 0px;
   border-radius: 40px;
   background-color: red;
   font-size: 1.75rem;
   color: #fff;
 }
-
 /* line 97, ../sass/style.scss */
+.button-next {
+  margin-top: 1%;
+}
+
+/* line 101, ../sass/style.scss */
 .input-text {
   font-size: 1.75rem;
   color: #a2a1b8;
 }
-/* line 101, ../sass/style.scss */
+/* line 105, ../sass/style.scss */
 .input-text-link {
   font-size: 1.75rem;
   text-decoration: none;
   color: #fff;
 }
 
-/* line 107, ../sass/style.scss */
+/* line 111, ../sass/style.scss */
 .title-signup {
-  padding-top: 20.5%;
   text-align: center;
   font-size: 2.75rem;
   color: #fff;
 }
 
-/* line 113, ../sass/style.scss */
+/* line 116, ../sass/style.scss */
 .input-signup {
-  margin-top: 20%;
+  padding-top: 10%;
   text-align: center;
 }
