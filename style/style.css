@@ -75,15 +75,19 @@ body {
 /* line 18, ../sass/style.scss */
 .wrapper {
   height: 100%;
-  min-width: 360px;
 }
 
-/* line 23, ../sass/style.scss */
+/* line 22, ../sass/style.scss */
 .page {
   height: 100%;
   overflow: hidden;
 }
-/* line 27, ../sass/style.scss */
+/* line 26, ../sass/style.scss */
+.page-conteiner {
+  height: 100%;
+  overflow: hidden;
+}
+/* line 30, ../sass/style.scss */
 .page-signin {
   margin: 0;
   padding: 0;
@@ -95,8 +99,9 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
-/* line 38, ../sass/style.scss */
+/* line 41, ../sass/style.scss */
 .page-signup {
+  display: none;
   margin: 0;
   padding: 0;
   min-width: 100%;
@@ -107,85 +112,122 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
-/* line 49, ../sass/style.scss */
+/* line 52, ../sass/style.scss */
+.page-signup-two {
+  display: none;
+  margin: 0;
+  padding: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background: url(../img/background_three.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* line 63, ../sass/style.scss */
 .page-inner {
   width: 100%;
   max-width: 750px;
   margin: 0 auto;
 }
 
-/* line 56, ../sass/style.scss */
-.logo {
-  min-width: 320px;
-  width: 42.6%;
-  margin: 0 auto;
+/* line 69, ../sass/style.scss */
+.signup-two-text {
+  max-width: 480px;
+  margin: auto;
+  font-size: 1.5rem;
+  color: #a2a1b8;
 }
 
-/* line 63, ../sass/style.scss */
+/* line 75, ../sass/style.scss */
+.logo {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+}
+/* line 79, ../sass/style.scss */
+.logo-two {
+  max-width: 400px;
+}
+
+/* line 84, ../sass/style.scss */
 .input {
   text-align: center;
 }
-/* line 65, ../sass/style.scss */
+/* line 86, ../sass/style.scss */
 .input-title {
   font-size: 1.75rem;
   color: #a2a1b8;
 }
-/* line 69, ../sass/style.scss */
+/* line 90, ../sass/style.scss */
 .input-signin-password {
   display: block;
 }
-/* line 72, ../sass/style.scss */
+/* line 93, ../sass/style.scss */
 .input-title-signup {
   display: block;
+  line-height: 1.3rem;
 }
 
-/* line 77, ../sass/style.scss */
+/* line 99, ../sass/style.scss */
 .field-input {
+  display: none;
   height: 2.24888%;
   width: 56.66667%;
   padding: 0.37481% 0.37481%;
-  border: none;
+  border: 0;
   background: transparent;
   font-size: 1.75rem;
   color: #fff;
 }
 
-/* line 87, ../sass/style.scss */
+/* line 109, ../sass/style.scss */
+.input-title:hover .field-input {
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 114, ../sass/style.scss */
 .button {
   width: 100%;
   padding-top: 1%;
   padding-bottom: 1%;
-  border: 0px;
+  border: 0;
   border-radius: 40px;
   background-color: red;
   font-size: 1.75rem;
   color: #fff;
 }
-/* line 97, ../sass/style.scss */
+/* line 124, ../sass/style.scss */
 .button-next {
-  margin-top: 1%;
+  display: block;
+  text-decoration: none;
+  font-family: Arial;
+  padding-top: 1%;
+  padding-bottom: 1.5%;
 }
 
-/* line 101, ../sass/style.scss */
+/* line 132, ../sass/style.scss */
 .input-text {
   font-size: 1.75rem;
   color: #a2a1b8;
 }
-/* line 105, ../sass/style.scss */
+/* line 136, ../sass/style.scss */
 .input-text-link {
   font-size: 1.75rem;
   text-decoration: none;
   color: #fff;
 }
 
-/* line 111, ../sass/style.scss */
+/* line 142, ../sass/style.scss */
 .title-signup {
   text-align: center;
   font-size: 2.75rem;
   color: #fff;
 }
 
-/* line 116, ../sass/style.scss */
+/* line 147, ../sass/style.scss */
 .input-signup {
   padding-top: 10%;
   text-align: center;

@@ -4,7 +4,8 @@
 	<meta charset="utf-8">
 	<meta name="keywords" content="Project">
 	<meta name="description" content="Project">
-	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link rel="stylesheet" type="text/css" href="style/style.css ">
+
 	<title>Project</title>
 </head>
 <body>
@@ -19,10 +20,10 @@
 						</a>
 					</h1>
 					<div class="input input-signin">
-						<label for="username" class="input-title">Username</label><br>
-						<input type="text" maxlength="30" style="text-align:center" class="field-input" id="username"><br>
-						<label for="password" class="input-title input-signin-password">Password</label><br>
-						<input type="password" maxlength="30" style="text-align:center" class="field-input" id="password"><br>
+						<label class="input-title">Username<br>
+						<input type="text" maxlength="30" style="text-align:center" class="field-input"></label>
+						<label for="password" class="input-title input-signin-password">Password<br>
+						<input type="password" maxlength="30" style="text-align:center" class="field-input" id="password"></label>
 						<button class="button">SIGNIN</button>
 						<p class="input-text">Don't have an account? <a href="#signup" class="input-text-link">Sign Up</a></p>
 					</div>
@@ -33,15 +34,34 @@
 				<div class="page-inner">
 					<h2 class="title-signup">Sign Up</h2>
 					<div class="input input-signup">
-						<label for="username-signup" class="input-title">Username</label><br>
-						<input type="text" maxlength="30" style="text-align:center" class="field-input" id="username-signup"><br>
-						<label for="email" class="input-title input-title-signup">Email Addres</label><br>
-						<input type="text" maxlength="30" style="text-align:center" class="field-input" id="email"><br>
-						<label for="password-signup" class="input-title input-title-signup">Password</label><br>
-						<input type="password" maxlength="30" style="text-align:center" class="field-input" id="password-signup"><br>
-						<label for="password-confirm" class="input-title input-title-signup"><span>Confirm Password</span></label><br>
-						<input type="password" maxlength="30" style="text-align:center" class="field-input" id="password-confirm"><br>
-						<button class="button button-next">NEXT</button>
+						<label class="input-title input-title-signup">Username<br>
+						<input type="text" maxlength="30" style="text-align:center" class="field-input"></label><br>
+						<label class="input-title input-title-signup">Email Addres<br>
+						<input type="email" maxlength="30" style="text-align:center" class="field-input"></label><br>
+						<label class="input-title input-title-signup">Password<br>
+						<input type="password" maxlength="30" style="text-align:center" class="field-input"></label><br>
+						<label class="input-title input-title-signup"><span>Confirm Password</span><br>
+						<input type="password" maxlength="30" style="text-align:center" class="field-input"></label><br>
+						<a class="button button-next" href="#signup-two">NEXT</a>
+						<p class="input-text">Don't have an account? <a href="#signin" class="input-text-link">Sign In</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="page-signup-two">
+				<a id="signup-two"></a>
+				<div class="page-inner">
+					<h1 class="logo logo-two">
+						<a href="#" title="Logo">
+							<img src="img/logo_two.png" alt="Logo_icon">
+						</a>
+					</h1>
+					<div class="input input-signup">
+						<label class="input-title input-title-signup>Enter code<br>
+							<input type="password" maxlength="30" style="text-align:center" class="field-input"></label><br>
+						<p class="signup-two-text">We’ve sent the confirmation code to your email, please check your inbox</p><br>
+						<a>Resend</a><br>
+							<input type="password" maxlength="30" style="text-align:center" class="field-input"></p><br>
+						<button class="button">Sign Up</button>
 						<p class="input-text">Don't have an account? <a href="#signin" class="input-text-link">Sign In</a></p>
 					</div>
 				</div>

@@ -17,34 +17,48 @@ body {
 
 .wrapper {
   height: 100%;
-  min-width: 360px;
 }
 
 .page {
   height: 100%;
   overflow: hidden;
 
- &-signin {
-  margin: 0;
-  padding: 0;
-  min-width: 100%;
-  min-height: 100%;
-  background: url(../img/background_one.png) no-repeat center center ;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+&-conteiner{
+  height: 100%;
+  overflow: hidden;
+}
+  &-signin {
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background: url(../img/background_one.png) no-repeat center center ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
   &-signup {
-  margin: 0;
-  padding: 0;
-  min-width: 100%;
-  min-height: 100%;
-  background: url(../img/background_two.png) no-repeat center center ;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background: url(../img/background_two.png) no-repeat center center ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  &-signup-two {
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background: url(../img/background_three.png) no-repeat center center ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
   &-inner {
   width: 100%;
@@ -52,12 +66,19 @@ body {
   margin: 0 auto;
   }
 }
-
+.signup-two-text {
+  max-width: 480px;
+  margin: auto;
+  @include font-size(24px);
+  color: #a2a1b8;
+}
 .logo {
-  min-width: 320px;
-  width: 42.6%;
+  width: 100%;
+  max-width: 320px;
   margin: 0 auto;
-
+  &-two {
+  max-width: 400px;
+  }
 }
 
 .input {
@@ -71,31 +92,41 @@ body {
   }
   &-title-signup {
     display: block;
+    line-height: 1.3rem;
   }
 }
 
 .field-input {
-  height: (30px/1334px)*100%;
-  width: (425px/750px)*100%;
-  padding: (5px/1334px)*100% (5px/1334px)*100%;
-  border: none;
-  background: transparent;
-  @include font-size(28px);
-  color: #fff;
+   display: none;
+   height: (30px/1334px)*100%;
+   width: (425px/750px)*100%;
+   padding: (5px/1334px)*100% (5px/1334px)*100%;
+   border: 0;
+   background: transparent;
+   @include font-size(28px);
+   color: #fff;
+}
+.input-title:hover .field-input {
+  display: block;
+  margin: 0 auto;
 }
 
 .button {
   width: 100%;
   padding-top: 1%;
   padding-bottom: 1%;
-  border: 0px;
+  border: 0;
   border-radius: 40px;
   background-color: red;
   @include font-size(28px);
   color: #fff;
 
   &-next {
-    margin-top: 1%;
+    display: block;
+    text-decoration: none;
+    font-family: Arial;
+    padding-top: 1%;
+    padding-bottom: 1.5%;
   }
 }
 .input-text {
@@ -117,3 +148,4 @@ body {
   padding-top: 10%;
   text-align: center;
 }
+
