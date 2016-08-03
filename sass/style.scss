@@ -4,7 +4,7 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "_reset";
-@import "mixins";
+@import "_mixins";
 
 html {
   height: 100%;
@@ -39,7 +39,7 @@ body {
     background-size: cover;
   }
   &-signup {
-    display: none;
+    /*display: none;*/
     margin: 0;
     padding: 0;
     min-width: 100%;
@@ -51,7 +51,7 @@ body {
     background-size: cover;
   }
   &-signup-two {
-    display: none;
+    /*display: none;*/
     margin: 0;
     padding: 0;
     min-width: 100%;
@@ -80,22 +80,17 @@ body {
   margin: 0 auto;
   &-two {
   max-width: 400px;
+  padding-top: 2rem;
   }
 }
 
 .input {
   text-align: center;
-  &-signin {
-    margin-top: 2rem;
-  }
   &-title {
     @include font-size(28px);
     color: #a2a1b8;
     display: block;
-  }
-  &-title-signup {
-    display: block;
-    line-height: 1.3rem;
+    margin-top: 1rem;
   }
 }
 
@@ -118,7 +113,7 @@ body {
 }
 
 .button {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   width: 100%;
   padding-top: 1%;
   padding-bottom: 1%;
@@ -129,6 +124,7 @@ body {
   color: #fff;
 
   &-next {
+    margin-top: 6rem;
     display: block;
     text-decoration: none;
     font-family: Arial;
@@ -147,6 +143,7 @@ body {
   }
 }
 .title-signup {
+  padding-top: 2rem;
   text-align: center;
   @include font-size(44px);
   color: #fff;

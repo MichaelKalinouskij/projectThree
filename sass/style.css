@@ -74,7 +74,7 @@ body {
     -o-background-size: cover;
     background-size: cover; }
   .page-signup {
-    display: none;
+    /*display: none;*/
     margin: 0;
     padding: 0;
     min-width: 100%;
@@ -85,7 +85,7 @@ body {
     -o-background-size: cover;
     background-size: cover; }
   .page-signup-two {
-    display: none;
+    /*display: none;*/
     margin: 0;
     padding: 0;
     min-width: 100%;
@@ -111,19 +111,16 @@ body {
   max-width: 320px;
   margin: 0 auto; }
   .logo-two {
-    max-width: 400px; }
+    max-width: 400px;
+    padding-top: 2rem; }
 
 .input {
   text-align: center; }
-  .input-signin {
-    margin-top: 2rem; }
   .input-title {
     font-size: 1.75rem;
     color: #a2a1b8;
-    display: block; }
-  .input-title-signup {
     display: block;
-    line-height: 1.3rem; }
+    margin-top: 1rem; }
 
 .field-input {
   display: none;
@@ -142,7 +139,7 @@ body {
   margin-bottom: 0.5rem; }
 
 .button {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   width: 100%;
   padding-top: 1%;
   padding-bottom: 1%;
@@ -152,6 +149,7 @@ body {
   font-size: 1.75rem;
   color: #fff; }
   .button-next {
+    margin-top: 6rem;
     display: block;
     text-decoration: none;
     font-family: Arial;
@@ -167,6 +165,7 @@ body {
     color: #fff; }
 
 .title-signup {
+  padding-top: 2rem;
   text-align: center;
   font-size: 2.75rem;
   color: #fff; }
