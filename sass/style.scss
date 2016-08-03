@@ -39,6 +39,7 @@ body {
     background-size: cover;
   }
   &-signup {
+    display: none;
     margin: 0;
     padding: 0;
     min-width: 100%;
@@ -50,6 +51,7 @@ body {
     background-size: cover;
   }
   &-signup-two {
+    display: none;
     margin: 0;
     padding: 0;
     min-width: 100%;
@@ -83,11 +85,12 @@ body {
 
 .input {
   text-align: center;
+  &-signin {
+    margin-top: 2rem;
+  }
   &-title {
     @include font-size(28px);
     color: #a2a1b8;
-  }
-  &-signin-password {
     display: block;
   }
   &-title-signup {
@@ -97,6 +100,7 @@ body {
 }
 
 .field-input {
+
    display: none;
    height: (30px/1334px)*100%;
    width: (425px/750px)*100%;
@@ -109,9 +113,12 @@ body {
 .input-title:hover .field-input {
   display: block;
   margin: 0 auto;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .button {
+  margin-top: 1rem;
   width: 100%;
   padding-top: 1%;
   padding-bottom: 1%;
