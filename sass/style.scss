@@ -19,19 +19,19 @@ body {
   height: 100%;
 }
 
-.page {
-  height: 100%;
-  overflow: hidden;
-
-&-conteiner{
+.pages {
   height: 100%;
   overflow: hidden;
 }
+.page {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  min-width: 100%;
+  min-height: 100%;
+
+
   &-signin {
-    margin: 0;
-    padding: 0;
-    min-width: 100%;
-    min-height: 100%;
     background: url(../img/background_one.png) no-repeat center center ;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -39,11 +39,7 @@ body {
     background-size: cover;
   }
   &-signup {
-    /*display: none;*/
-    margin: 0;
-    padding: 0;
-    min-width: 100%;
-    min-height: 100%;
+    display: none;
     background: url(../img/background_two.png) no-repeat center center ;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -51,11 +47,7 @@ body {
     background-size: cover;
   }
   &-signup-two {
-    /*display: none;*/
-    margin: 0;
-    padding: 0;
-    min-width: 100%;
-    min-height: 100%;
+    display: none;
     background: url(../img/background_three.png) no-repeat center center ;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -75,9 +67,12 @@ body {
   color: #a2a1b8;
 }
 .logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -10em;
   width: 100%;
   max-width: 320px;
-  margin: 0 auto;
   &-two {
   max-width: 400px;
   padding-top: 2rem;
@@ -85,12 +80,17 @@ body {
 }
 
 .input {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -11.25em;
+  margin-top: 3em;
   text-align: center;
   &-title {
     @include font-size(28px);
     color: #a2a1b8;
     display: block;
-    margin-top: 1rem;
+    margin-top: 1em;
   }
 }
 
@@ -108,12 +108,12 @@ body {
 .input-title:hover .field-input {
   display: block;
   margin: 0 auto;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 .button {
-  margin-top: 0.5rem;
+  margin-top: 0.5em;
   width: 100%;
   padding-top: 1%;
   padding-bottom: 1%;
@@ -124,7 +124,7 @@ body {
   color: #fff;
 
   &-next {
-    margin-top: 6rem;
+    margin-top: 6em;
     display: block;
     text-decoration: none;
     font-family: Arial;
@@ -143,7 +143,7 @@ body {
   }
 }
 .title-signup {
-  padding-top: 2rem;
+  padding-top: 2em;
   text-align: center;
   @include font-size(44px);
   color: #fff;
