@@ -62,7 +62,6 @@ body {
   overflow: hidden; }
 
 .page {
-  position: relative;
   margin: 0;
   padding: 0;
   min-width: 100%;
@@ -99,28 +98,27 @@ body {
   color: #a2a1b8; }
 
 .logo {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  margin-left: -10em;
+  position: relative;
+  margin: 0 auto;
   width: 100%;
   max-width: 320px; }
   .logo-two {
     max-width: 400px;
     padding-top: 2rem; }
 
-.input {
+.form {
   position: absolute;
   top: 50%;
   left: 50%;
   margin-left: -11.25em;
   margin-top: 3em;
   text-align: center; }
-  .input-title {
-    font-size: 1.75rem;
-    color: #a2a1b8;
-    display: block;
-    margin-top: 1em; }
+
+.input-title {
+  font-size: 1.75rem;
+  color: #a2a1b8;
+  display: block;
+  margin-top: 1em; }
 
 .field-input {
   display: none;
